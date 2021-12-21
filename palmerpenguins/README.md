@@ -39,7 +39,8 @@ penguins %>% group_by(island) %>% drop_na() %>% summarize(max_bill_length_mm = m
 #plot penguins flipper length by body mass
 ggplot(penguins, aes(flipper_length_mm, body_mass_g, colour = species, shape = species)) + 
   geom_point()
-  
+![plotting-1](https://github.com/Brown-Justin/Analysis-With-R/blob/main/palmerpenguins/images/plotting-1.png) 
+
 #this one will use smooth instead of point for the graph
 ggplot(penguins, aes(flipper_length_mm, body_mass_g)) + 
   geom_smooth()
