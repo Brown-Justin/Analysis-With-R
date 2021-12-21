@@ -25,7 +25,7 @@ Using the group ID as the X axis, and the amount of extra sleep as values, we ca
 I also set the size of the point to be equal to the amount of extra sleep. Helps to highlight the difference between patient ID's with low benefit vs high benefits. 
 
 ```{r plots}
-p <- ggplot(sleep, aes(group, extra, colour = ID, size = extra))
-p + geom_point()
+ggplot(sleep, aes(group, extra, colour = ID, size = extra)) + 
+  geom_point()
 ```
 ![sleep-1](https://user-images.githubusercontent.com/70235515/146835816-89be86a4-6460-456b-9216-5bd6897d3a3f.png)
