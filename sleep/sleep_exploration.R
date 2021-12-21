@@ -16,5 +16,5 @@ colnames(sleep)
 
 #now lets plot the points, using group as the x, and the amount of extra sleep as y, also scaling the size of the dot by the amount extra.
 
-p <- ggplot(sleep, aes(group, extra, colour = ID, size = extra))
-p + geom_point()
+ggplot(sleep, aes(group, extra, colour = ID, size = extra)) + 
+  geom_point()
